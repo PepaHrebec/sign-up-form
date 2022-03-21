@@ -15,8 +15,27 @@
 .left {
     flex: 1;
 }
+
 .right {
+    display: flex;
+    flex-direction: column;
     flex: 2;
     background-color: ghostwhite;
+}
+
+.top {
     padding: 40px;
+}
+
+form {
+    display: block;
+    background-color: beige;
+}
+
+label {
+    display: block;
+}
+
+.form-inp {
+    margin: 15px;
 }
