@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #596D48;
+}
+
 .content {
     display: flex;
 }
@@ -27,16 +31,35 @@
     padding: 40px;
 }
 
-.fldset {
-    background-color: beige;
+.center {
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 label {
     display: block;
 }
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .form-inp {
-    margin: 15px;
+    margin: 10px 10px 10px 20px;
+}
+
+.motivate {
+    margin-left: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: ghostwhite;
+    border-radius: 4px;
+    padding: 10px;
+    width: fit-content;
+    margin: 40px;
 }
