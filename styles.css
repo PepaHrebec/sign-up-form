@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+}
+
+.fern {
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+}
+.right {
+    flex: 2;
+    background-color: ghostwhite;
+    padding: 40px;
+}
