@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -16,6 +15,7 @@
                 <div>ODIN</div>
             </div>
             <img class="fern" src="./pics/fern.jpg" alt="Photo of a fern"> 
+            <div class="photo-author">Picture from <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a></div>
         </div> 
         <div class="right">
             <div class="top">
@@ -24,34 +24,40 @@
             </div>
             <div class="center">
                 <div class="motivate">Let's do this!</div>
-                <form action="http://httpbin.org/post" method="post">
+                <form action="http://httpbin.org/post" method="post" id="form1">
                     <div class="form-inp">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required>
+                        <span class="message">Hi</span>
                     </div>
                     <div class="form-inp">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required>
+                        <span class="message">Hi</span>
                     </div>
                     <div class="form-inp">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
+                        <span class="message">Hi</span>
                     </div>
                     <div class="form-inp">
                         <label for="phone-num">PHONE NUMBER</label>
-                        <input type="number" name="phone-num" id="phone-num">
+                        <input type="number" name="phone-num" id="phone-num" required>
+                        <span class="message">Hi</span>
                     </div>
                     <div class="form-inp">
                         <label for="passwd">PASSWORD</label>
-                        <input type="password" name="passwd" id="passwd">
+                        <input type="password" name="passwd" id="passwd" required>
+                        <span class="message">Hi</span>
                     </div>
                     <div class="form-inp">
                         <label for="passwd-check">CONFIRM PASSWORD</label>
-                        <input type="password" name="passwd-check" id="passwd-check">
+                        <input type="password" name="passwd-check" id="passwd-check" required>
+                        <span class="message">Hi</span>
                     </div>
                 </form>
             </div>
-            <button>Create Account</button>
+            <button type="submit" form="form1" value="Submit">Create Account</button>
             <div class="login">Already have an account? <a href="index.html">Log in</a></div>
         </div>
     </div>
