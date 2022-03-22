@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -123,7 +123,7 @@ button {
 }
 
 .message {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 10px;
     color: red;
     display: block;
@@ -132,9 +132,18 @@ button {
 
 input {
     border: 1px solid #E5E7EB;
+    border-radius: 3px;
     padding: 3px 6px;
 }
 
-input:invalid + .message {
+input:not(:focus):not(:placeholder-shown):invalid  {
+    border: 2px solid red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid  + .message {
     opacity: 1;
   }
+
+input:valid {
+    border: 2px solid green;
+}

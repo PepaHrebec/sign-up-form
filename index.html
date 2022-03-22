@@ -27,33 +27,35 @@
                 <form action="http://httpbin.org/post" method="post" id="form1">
                     <div class="form-inp">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" required>
-                        <span class="message">Hi</span>
+                        <input type="text" name="first-name" id="first-name" placeholder=" " required>
+                        <span class="message">*First name required</span>
                     </div>
                     <div class="form-inp">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" required>
-                        <span class="message">Hi</span>
+                        <input type="text" name="last-name" id="last-name" placeholder=" " required>
+                        <span class="message">*Last name required</span>
                     </div>
                     <div class="form-inp">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
-                        <span class="message">Hi</span>
+                        <input type="email" name="email" id="email" placeholder=" " required>
+                        <span class="message">*Email required, eg. joe@mail.com</span>
                     </div>
                     <div class="form-inp">
                         <label for="phone-num">PHONE NUMBER</label>
-                        <input type="number" name="phone-num" id="phone-num" required>
-                        <span class="message">Hi</span>
+                        <input type="tel" name="phone-num" id="phone-num" 
+                        placeholder=" " pattern="[0-9]{9}" required>
+                        <span class="message">*Phone number without prefix</span>
                     </div>
                     <div class="form-inp">
                         <label for="passwd">PASSWORD</label>
-                        <input type="password" name="passwd" id="passwd" required>
-                        <span class="message">Hi</span>
+                        <input type="password" name="passwd" id="passwd"
+                         placeholder=" " pattern="(?=.*[A-Z]).{8,}" required>
+                        <span class="message">*8+ characters, one uppercase</span>
                     </div>
                     <div class="form-inp">
                         <label for="passwd-check">CONFIRM PASSWORD</label>
-                        <input type="password" name="passwd-check" id="passwd-check" required>
-                        <span class="message">Hi</span>
+                        <input type="password" name="passwd-check" id="passwd-check" placeholder=" " required>
+                        <span class="message">*Must match password</span>
                     </div>
                 </form>
             </div>
